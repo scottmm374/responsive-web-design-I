@@ -68,13 +68,10 @@ h1, h2, h3, h4, h5 {
 
 
 .container-main { 
-	display: block;
-	max-width: 900px;
-	margin: 0 auto;	
-	border: 1px solid red;
-	padding: 0 10px;;
-	
-	
+	max-width: 880px;
+	margin: auto;
+	padding: 40px 5px;	
+	overflow: hidden;	
 }
 
 /* Navigation area */
@@ -83,13 +80,12 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-between;
 	align-items: center;
 	margin: 20px 0;
-	width: 880px;
-	
+	width: 880px;	
 }
 
 .navigation nav {
 	display: flex;
-	justify-content: flex-start;	
+	justify-content: flex-start;
 }
 
 
@@ -115,8 +111,6 @@ header .header .left-content button {
 	width: 140px;
 	padding: 5px 0;	
 	border: 1px solid lightgray;
-	
-
 }
 
 
@@ -146,7 +140,7 @@ header .header .left-content button {
 
 .main-content .first-content div {
 	 width: 400px; 
-	 padding: 10px 0;	 
+	 padding: 10px 0;
  } 
 
  /* Second content area Main page*/
@@ -161,7 +155,7 @@ header .header .left-content button {
 
 .main-content .second-content div {
 	width: 270px;
-	padding: 20px 0;	
+	padding: 20px 0;
 }
 
 /* Contact section and footer section */
@@ -176,7 +170,7 @@ footer {
 	width: 880px;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	padding: 20px 0;
+	/* padding: 20px 0; */
 	text-align: center;
 }
 
@@ -188,8 +182,12 @@ footer {
 /*  Tablet  */
 
 @media (max-width: 800px) {
-	
 
+	.container-main { 
+		width: 100%;
+		overflow: hidden;			
+	}
+	
 	.container-main .navigation {
 		width: 100%;
 		margin: 0 auto;
@@ -204,8 +202,7 @@ footer {
 
 	.main-content .first-content {
 		width: 100%;
-		margin: 0 auto;
-		
+		margin: 0 auto;	
 	}
 
 	.main-content .second-content {
@@ -224,17 +221,18 @@ footer {
 		display: none;
 	}
 
-	
-
 	.main-content .image .middle-img {
 		width: 100%;
-		margin: 0 auto;
-		
+		margin: 0 auto;	
 	}
 
 	.contact {
 		width: 100%;
 		margin: 0 auto;
+	}
+
+	footer {
+		width: 100%;
 	}
 }
 
@@ -244,16 +242,17 @@ footer {
 
 @media (max-width: 500px) {
 
-	.container-main .navigation {
-		margin-left: 29px;
+	.container-main { 
+		width: 100%;
+		border: 1px solid red;	
+		overflow: hidden;	
 	}
 
 	.container-main .navigation  nav {
 		width: 100%;
-		margin: 0 auto;
+		margin:  auto;
 		flex-direction: column;
 		align-items: center;
-	
 	}
 
 	.container-main .navigation nav a {
@@ -263,12 +262,12 @@ footer {
 		border-bottom: 1px solid gray;
 		text-align: center;
 	}
+
 	.main-content .first-content {
 		width: 100%;
 		margin: 0 auto;
 		flex-direction: column;
-		align-items: flex-start;
-		
+		align-items: flex-start;	
 	}
 
 	.main-content .second-content {
@@ -280,8 +279,7 @@ footer {
 
 	.main-content .image .middle-img {
 		width: 100%;
-		margin: 0 auto;
-		
+		margin: 0 auto;	
 	}
 
 	.contact {
@@ -291,8 +289,5 @@ footer {
 
 	footer {
 		width: 100%;
-		margin: 0 auto;
-	}
-
-	
+	}	
 }
